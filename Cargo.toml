@@ -15,10 +15,15 @@ members = [
     "crates/rbuilder/src/test_utils",
     "crates/rbuilder/src/telemetry/metrics_macros",
     "crates/eth-sparse-mpt",
+    "crates/flashblocks",
     "crates/sysperf",
     "crates/test-relay",
 ]
-default-members = ["crates/rbuilder", "crates/reth-rbuilder", "crates/test-relay"]
+default-members = [
+    "crates/rbuilder",
+    "crates/reth-rbuilder",
+    "crates/test-relay",
+]
 resolver = "2"
 
 # Like release, but with full debug symbols. Useful for e.g. `perf`.
@@ -132,10 +137,10 @@ alloy-rpc-client = { version = "0.11.1" }
 alloy-genesis = { version = "0.11.1" }
 alloy-trie = { version = "0.7" }
 op-alloy-rpc-types = { version = "0.10.3", default-features = false }
-op-alloy-rpc-types-engine = { version =  "0.10.3", default-features = false }
-op-alloy-rpc-jsonrpsee = { version =  "0.10.3", default-features = false }
-op-alloy-network = { version =  "0.10.3", default-features = false }
-op-alloy-consensus = { version =  "0.10.3", default-features = false }
+op-alloy-rpc-types-engine = { version = "0.10.3", default-features = false }
+op-alloy-rpc-jsonrpsee = { version = "0.10.3", default-features = false }
+op-alloy-network = { version = "0.10.3", default-features = false }
+op-alloy-consensus = { version = "0.10.3", default-features = false }
 
 async-trait = { version = "0.1.83" }
 clap = { version = "4.4.3", features = ["derive", "env"] }
@@ -172,4 +177,4 @@ time = { version = "0.3.36", features = ["macros", "formatting", "parsing"] }
 eth-sparse-mpt = { path = "crates/eth-sparse-mpt" }
 rbuilder = { path = "crates/rbuilder" }
 sysperf = { path = "crates/sysperf" }
-metrics_macros = { path = "crates/rbuilder/src/telemetry/metrics_macros"}
+metrics_macros = { path = "crates/rbuilder/src/telemetry/metrics_macros" }

@@ -1,0 +1,36 @@
+[package]
+name = "flashblocks"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+
+[dependencies]
+
+
+# reth
+reth-evm.workspace = true
+reth-chainspec.workspace = true
+reth-node-api.workspace = true
+reth-basic-payload-builder.workspace = true
+reth-provider.workspace = true
+reth-revm.workspace = true
+reth-transaction-pool.workspace = true
+
+# op-reth
+reth-optimism-chainspec.workspace = true
+reth-optimism-payload-builder.workspace = true
+reth-optimism-primitives.workspace = true
+reth-optimism-forks.workspace = true
+
+# async
+tokio.workspace = true
+#TODO: add to workspace
+tokio-tungstenite = "0.26.2"
+
+# misc
+tracing.workspace = true
+# TODO: add this to workspace
+futures-util = "0.3.31"
